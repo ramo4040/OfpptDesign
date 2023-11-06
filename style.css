@@ -1,0 +1,63 @@
+@font-face {
+    font-family: PPMori;
+    src: url(font/PPMori-SemiBold.otf);
+}
+
+:root {
+    --color-1: #cc5eff;
+
+}
+
+body {
+    background-color: rgb(15, 15, 15) !important;
+    color: #fff !important;
+    font-family: PPMori !important;
+    overflow-x: hidden;
+
+}
+
+.bgnavbar {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    z-index: 99;
+}
+
+.bgHeader {
+    background-image: url(img/bg.png);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* bootstrap change css variables / CSS custom properties */
+
+.btn-light {
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-bg: var(--color-1) !important;
+    --bs-btn-hover-border-color: var(--color-1) !important;
+}
+
+.badge {
+    background: linear-gradient(347deg, rgba(74, 21, 179, 0.2) 0%, rgba(98, 20, 181, 0.11) 105%);
+    color: var(--color-1) !important;
+}
+
+.btn-primary {
+    --bs-btn-bg: transparent !important;
+    --bs-btn-border-color: transparent !important;
+    --bs-btn-active-bg: #8148f4 !important;
+    --bs-btn-active-border-color: transparent !important;
+    --bs-btn-disabled-bg: transparent !important;
+    --bs-btn-disabled-border-color: transparent !important;
+}
+
+.accordion {
+    --bs-accordion-color: var(--bs-body-color);
+    --bs-accordion-bg: transparent !important;
+    --bs-accordion-border-color: transparent !important;
+    --bs-accordion-btn-focus-border-color: transparent !important;
+    --bs-accordion-active-bg: transparent !important;
+    --bs-accordion-btn-focus-box-shadow: 0 !important;
+}
